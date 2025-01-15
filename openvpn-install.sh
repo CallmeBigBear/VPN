@@ -1,10 +1,20 @@
 #!/bin/bash
 
-# Load common functions
-source <(curl -s https://raw.githubusercontent.com/CallmeBigBear/logo/refs/heads/main/common.sh)
+show_logo(){
+clear
+cat << "EOF"
+==================================================================================
 
-# Print logo
-printLogo
+ __      __.__ __   .__  ____   ____      .__  .__    .___       __               
+/  \    /  |__|  | _|__| \   \ /   _____  |  | |__| __| ______ _/  |_ ___________ 
+\   \/\/   |  |  |/ |  |  \   Y   /\__  \ |  | |  |/ __ |\__  \\   __/  _ \_  __ \
+ \        /|  |    <|  |   \     /  / __ \|  |_|  / /_/ | / __ \|  |(  <_> |  | \/
+  \__/\  / |__|__|_ |__|    \___/  (____  |____|__\____ |(____  |__| \____/|__|   
+       \/          \/                   \/             \/     \/                  
+                                                            https://validator.wiki
+==================================================================================
+EOF
+}
 
 if readlink /proc/$$/exe | grep -q "dash"; then
 	echo 'This installer needs to be run with "bash", not "sh".'
