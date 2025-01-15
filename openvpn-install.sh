@@ -1,9 +1,7 @@
 #!/bin/bash
-show_logo(){
-clear
+
 # Load common functions
 source <(curl -s https://raw.githubusercontent.com/CallmeBigBear/logo/refs/heads/main/common.sh)
-}
 
 if readlink /proc/$$/exe | grep -q "dash"; then
 	echo 'This installer needs to be run with "bash", not "sh".'
