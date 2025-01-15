@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Load common functions
-#source <(curl -s https://raw.githubusercontent.com/CallmeBigBear/logo/refs/heads/main/common.sh)
-source <(curl -s https://raw.githubusercontent.com/CoinHuntersTR/Logo/main/common.sh)
+source <(curl -s https://raw.githubusercontent.com/CallmeBigBear/logo/refs/heads/main/common.sh)
 
 # Print logo
 printLogo
